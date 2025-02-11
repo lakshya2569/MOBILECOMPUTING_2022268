@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">assignment123</string>
+    <string-array name="location_options">
+        <item>US</item>
+        <item>UK</item>
+        <item>UAE</item>
+        <item>IND</item>
+        <item>JAP</item>
+    </string-array>
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Convert Button at the Top-Right -->
+    <Button
+        android:id="@+id/button_convert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convert Distance to Miles"
+        android:background="#0000FF"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:padding="8dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="10dp"/>
+
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="30dp">
+        <TableLayout
+            android:id="@+id/table_flight_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+            android:shrinkColumns="*"
+            android:background="#EEEEEE"
+            android:padding="8dp"/>
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/text_journey_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Journey Progress:"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:padding="8dp"
+        android:layout_marginTop="16dp"/>
+
+    <ProgressBar
+        android:id="@+id/progress_journey"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="0"
+        android:layout_marginTop="8dp"/>
+
+
+    <Button
+        android:id="@+id/btn_next_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next Stop Reached"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>
